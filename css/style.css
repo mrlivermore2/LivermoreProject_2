@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+    :root{
+        --primary-color:#1F4C3E;
+        --onPrimary-color: white;
+
+        --primary-Container:white;
+        --onPrimary-Container:#E4E6EA;
+
+        --background-color:#D4E9E2;
+        --onBackground-color:#082100;
+    
+    }
+
+    body{
+        background-color: #D4E9E2;
+        animation-name: changeBG;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+    .header{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .header h1{
+        font-size: 3rem;
+        color: #1F4C3E;
+        font-family: 'Koulen', sans-serif;
+    }
+    .header h2{
+        font-size: 2rem;
+        color: #1F4C3E;
+        font-family: 'Koulen', sans-serif;
+        margin-left: 5%;
+        text-align: left;
+    }
+    /* .flex-img{
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        background:#D4E9E2;
+        margin-top: 10%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        animation-name: changeBG;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    } */
+
+    /* .img-holder{
+        width: 55vw;
+        height: 55vw;
+        max-width: 400px;
+        max-height: 400px;
+        background: honeydew;
+        border-style: solid;
+        border-radius: 5%;
+    } */
+
+.login-button{
+    margin-top: 25%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.login-button p{
+    font-size: 1rem;
+
+}
+.login-button button{   
+    background-color:#1F4C3E;
+    border: none;
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    margin-top: 75%;
+    padding: 0.65rem, 1rem;
+    border-radius: 10%;
+
+}
+
+.new-button{
+    /* margin-top: 5%;
+    margin-bottom: 10%; */
+    text-align: center;
+    
+
+}
+.new-button p{
+    font-size: 1rem;
+}
+.new-button button{
+    background-color: #1F4C3E;
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    margin-top: 5%;
+    padding: 0.65rem, 1rem;
+    border-radius: 10%;
+    border: none
+
+}
+.back-button{
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+.back-button button{
+    background-color: #1F4C3E;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    font-size: medium;
+    padding: 1%;
+}
+
+.flex-container{
+    /* display: flex; */
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #D4E9E2;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation-name: changeBG;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.flex-container2{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background: #D4E9E2; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+/* .shop{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-direction:row;
+    
+    /* margin: 1vw; */
+    /* padding:10% ;
+
+} */
+img{
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+}
+.shop-text{
+    text-align: center;
+    font-size: 1rem;
+    color: #1F4C3E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    flex-direction: row;
+    display: flex;
+    width: 100px;
+    height: 25px
+}
+@keyframes changeBG {
+    0% {background-color:mintcream;}
+    25%{background-color:#D4E9E2;}
+    50%{background-color:honeydew;}
+    75%{background-color:#D4E9E2 ;}
+    100%{background-color:mintcream;}
+
+}
+
+/* .item{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    background: #1F4C3E;
+    margin: 1vw;
+    
+    } */
+
+    /******DESKTOP VERSION******/
+
+@media screen and (width>= 1366px) {
+    /* html{
+        font-size: 125%;
+
+    } */
+
+.header h2{
+    font-size: 3rem;
+    margin-top: 5%;
+
+}
+
+.login-button{
+    margin-top: 3%;
+    /* margin-bottom: 5%; */
+}
+
+
+.new-button{
+    margin-top: 3%;
+    /* margin-bottom: 25%; */
+}
+}
+.login-button button{   
+    background-color:#1F4C3E;
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    margin-top: 10%;
+    /* padding: 0.65rem, 1rem; */
+    border-radius: 10%;
+    border: none;
+
+}
+.new-button button{
+    background-color: #1F4C3E;
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    margin-top: 5%;
+    /* padding: 0.65rem, 1rem; */
+    border-radius: 10%;
+    border: none;
+
+}
+.back-button{
+    margin-left: 70px;
+    margin-top: 10px;
+    text-align: left;
+}
+img{
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+  
+}
+.shop-text{
+    text-align: left;
+    font-size: 1rem;
+    color: #1F4C3E;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    flex-direction: row;
+    display: flex;
+    width: 350px;
+    height: 10px;
+    margin-bottom: 10%;
+}
